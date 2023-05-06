@@ -6,26 +6,40 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/ic_fixit"
+        android:label="FixIt"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FIXITBYOREO"
+        android:theme="@style/Theme.FixIt"
         tools:targetApi="31">
         <activity
-            android:name=".customer_orders_home"
-            android:exported="false"/>
-
+            android:name=".WorkerEdit"
+            android:exported="false" />
         <activity
-            android:name=".worker_orders_home"
+            android:name=".SplashActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".DisplayAppName"
+            android:exported="false" />
+        <activity
+            android:name=".LogInSignUp"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Signup"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Worker"
+            android:exported="false" />
+        <activity
+            android:name=".Customer"
             android:exported="false" />
     </application>
 

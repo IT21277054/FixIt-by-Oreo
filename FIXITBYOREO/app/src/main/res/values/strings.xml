@@ -1,5 +1,32 @@
 <resources>
-    <string name="app_name">FIXIT BY OREO</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">FixIt</string>
+
+
+    <string name="login_signup_Login">LOG IN</string>
+    <string name="login_signup_Signup">SIGN UP</string>
+
+    <string name="signup_SignUp">SIGN UP</string>
+
+    <string name="login_logIn">LOG IN</string>
+
+    <string name="worker_save">SAVE</string>
+
+    <string name="customer_save">SAVE</string>
+
+    <string name="signup_cancelBtn">cancel</string>
+
+    <string name="login_cancelBtn">cancel</string>
+
+    <string-array name="type">
+        <item></item>
+        <item>Worker</item>
+        <item>Customer</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
 </resources>

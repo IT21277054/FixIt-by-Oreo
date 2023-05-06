@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "171623957751",
-    "project_id": "fixit-by-oreo",
-    "storage_bucket": "fixit-by-oreo.appspot.com"
+    "project_number": "552339340294",
+    "project_id": "fixit-abe9c",
+    "storage_bucket": "fixit-abe9c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:171623957751:android:017845717998f999303ff2",
+        "mobilesdk_app_id": "1:552339340294:android:1a264b0a3e05fe91ef5787",
         "android_client_info": {
-          "package_name": "com.example.fixitbyoreo"
+          "package_name": "com.example.fixit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+          "client_id": "552339340294-p3ijbgt37165rtdtc7o2i0t2l95fpj43.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDtoupKDxdVIuKtcVJmM2SqihGGO6N3w_k"
+          "current_key": "AIzaSyDqzJWZ-CzMbVJh-PBxqxZ6CqBGsUP7UeA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+              "client_id": "552339340294-p3ijbgt37165rtdtc7o2i0t2l95fpj43.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
