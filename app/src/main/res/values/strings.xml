@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Halted">Halted</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="User">User</string>
+    <string name="Fixit">FIX-IT</string>
+    <string name="PoweredBy">Powered By Oreo</string>
+    <string name="Find">    Find     </string>
+    <string name="Pending"> Pending </string>
+    <string name="OnGoing">OnGoing</string>
+    <string name="Complete">Complete</string>
+    <string name="Ratings"> Ratings </string>
+    <string name="GetWorker">Get Worker</string>
+    <string name="OnGoingWork">On-Going Work</string>
+    <string name="RequestPending">Request Pending</string>
+    <string name="EnterDetails">Enter Details</string>
+    <string name="Title">Title</string>
+    <string name="Description">Description</string>
+    <string name="CurrentLocation">Current Location</string>
+    <string name="Submit">Submit</string>
+    <string name="ChooseTip">Choose Tip</string>
+    <string name="Work">Work</string>
+    <string name="StatusInProgress">Status: In Progress</string>
+    <string name="Tile">Tile: 5</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Continue">Are you certain you want to continue?</string>
+
+    <string-array name="title_options">
+        <item>Choose Worker Type</item>
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Gardener</item>
+        <item>Other</item>
+    </string-array>
+</resources>
