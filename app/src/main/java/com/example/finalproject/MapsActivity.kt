@@ -119,7 +119,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val description = descriptionEditText.text.toString().trim()
             val location = city
 
-            if (title == "Choose Value" || description.isBlank()) {
+            if (title == "Choose Worker Type" || description.isBlank()) {
                 Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }

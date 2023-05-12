@@ -19,7 +19,7 @@ class ExampleUnitTest {
 
     @Test
     fun inValidValues() {
-        val title = "Choose Value"
+        val title = "Choose Worker Type"
         val description = ""
         assertFalse(testValue(title,description))
     }
@@ -27,7 +27,7 @@ class ExampleUnitTest {
 
     fun testValue(title: String,description:String): Boolean {
 
-        if (title == "Choose Value" || description.isBlank()) {
+        if (title == "Choose Worker Type" || description.isBlank()) {
 //            Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
             return false
         }
