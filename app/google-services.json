@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "171623957751",
+    "firebase_url": "https://fixit-by-oreo-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fixit-by-oreo",
+    "storage_bucket": "fixit-by-oreo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171623957751:android:da1a8db308d0619e303ff2",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtoupKDxdVIuKtcVJmM2SqihGGO6N3w_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171623957751:android:017845717998f999303ff2",
+        "android_client_info": {
+          "package_name": "com.example.fixitbyoreo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtoupKDxdVIuKtcVJmM2SqihGGO6N3w_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171623957751:android:f3d1ebde08cbe1a3303ff2",
+        "android_client_info": {
+          "package_name": "com.example.workerside"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtoupKDxdVIuKtcVJmM2SqihGGO6N3w_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171623957751-vk7ogcknvsa40t1fcrlfnaeo6cfute89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

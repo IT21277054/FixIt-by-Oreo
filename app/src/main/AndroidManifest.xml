@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorkerSide"
+        tools:targetApi="31">
+        <activity
+            android:name=".displayPayments"
+            android:exported="false" />
+        <activity
+            android:name=".cancelation"
+            android:exported="false" />
+        <activity
+            android:name=".payment"
+            android:exported="false" />
+        <activity
+            android:name=".completedJobs"
+            android:exported="true" />
+        <activity
+            android:name=".onGoingJobs"
+            android:exported="false" />
+        <activity
+            android:name=".searchJobs"
+            android:exported="false" />
+        <activity
+            android:name=".workerMainMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAVKpNnMLsH6rK3hev03nysYGlJxUfevXg" />
+    </application>
+
+</manifest>
