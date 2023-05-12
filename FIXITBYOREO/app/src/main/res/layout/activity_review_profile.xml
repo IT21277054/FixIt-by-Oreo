@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewProfile">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="253dp"
+        android:layout_height="237dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/pic1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="107dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/nevil_b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        tools:ignore="VisualLintOverlap,TextSizeCheck" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_view"
+        android:layout_width="285dp"
+        android:layout_height="43dp"
+        android:contentDescription="@string/EmailToME"
+        android:foregroundGravity="center"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@android:color/holo_orange_dark"
+
+        android:rating="4"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+
+        android:stepSize="1"
+        android:transformPivotX="120dp"
+
+        android:transformPivotY="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="@string/next_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <Button
+        android:id="@+id/editReviewButton"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:text="@string/Edit_review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        tools:text="@string/Edit_review" />
+
+    <TextView
+        android:id="@+id/reviewTitleTextView"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="WOW"
+        android:textSize="50px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/reviewDescriptionTextView"
+        android:layout_width="353dp"
+        android:layout_height="145dp"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        android:gravity="center"
+        android:text="@string/an_honest_recommendation_details_a_riences_with_the_applicant_you_should_know_how_the_candidate_acts_an_honest_recommendation_details_a_riences_with_the_applicant_you_should_know_how_the_candidate_acts_and_performs_in_a_work_environment"
+        android:textSize="45px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
