@@ -85,6 +85,26 @@
             android:name=".ResetPassword"
             android:exported="false" />
 
+
+
+        <activity
+            android:name=".payment"
+            android:exported="false" />
+        <activity
+            android:name=".completedJobs"
+            android:exported="false" />
+        <activity
+            android:name=".onGoingJobs"
+            android:exported="false" />
+        <activity
+            android:name=".searchJobs"
+            android:exported="false" />
+        <activity
+            android:name=".workerMainMenu"
+            android:exported="false"/>
+
+
+
     </application>
 
 </manifest>

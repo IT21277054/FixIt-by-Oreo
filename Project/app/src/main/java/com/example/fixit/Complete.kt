@@ -16,7 +16,6 @@ class Complete : AppCompatActivity() {
     private lateinit var jobArrayList: ArrayList<PendingJobs>
     private lateinit var onGoingBackBtn:ImageView
 
-
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,8 +72,6 @@ class Complete : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
-
-
 
     }
 

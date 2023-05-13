@@ -14,4 +14,22 @@
     <color name="Dark_green">#2E4F4F</color>
     <color name="Dark_blue">#2C3333</color>
     <color name="bluer">#1AFFFFFF</color>
+
+
+    <!--    colors for the app-->
+    <color name="grey">#475B63</color>
+    <color name="light_black">#2E2C2F</color>
+    <color name="light_blue">#3AAED8</color>
+    <color name="light_white">#ECECEC</color>
+    <color name="platinum_white">#E5E4E2</color>
+
+    <color name="dark_green">#54B435</color>
+    <color name="dark_red">#DF2E38</color>
+
+    <color name="NoteColor1">#FF6263</color>
+    <color name="NoteColor2">#23C4ED</color>
+    <color name="NoteColor3">#38CC77</color>
+    <color name="NoteColor4">#D9D55B</color>
+    <color name="NoteColor5">#318BD1</color>
+    <color name="NoteColor6">#D345D0</color>
 </resources>

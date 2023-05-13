@@ -97,7 +97,7 @@ class Login : AppCompatActivity() {
 
                         val userType = snapshot.child("userType").value
                         if (userType == "Worker"){
-                            startActivity(Intent(this@Login,Worker::class.java))
+                            startActivity(Intent(this@Login,workerMainMenu::class.java))
                             finish()
                         }
                         else if (userType == "Customer"){
