@@ -26,13 +26,13 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import java.util.*
 
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var userdatabase: DatabaseReference
     private lateinit var database: DatabaseReference
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
@@ -56,6 +56,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         database = FirebaseDatabase.getInstance().getReference("Jobs")
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -116,39 +117,62 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val descriptionEditText = dialog.findViewById<EditText>(R.id.popup_description_input)
         val submitButton = dialog.findViewById<Button>(R.id.form_submit_button)
 
-        submitButton.setOnClickListener {
-            val title = titleEditText.selectedItem.toString()
-            val name = "Minija Minisunghe"
-            val description = descriptionEditText.text.toString().trim()
-            val location = city
+        val firebaseUser = firebaseAuth.currentUser!!
+
+        val cusid = FirebaseDatabase.getInstance().getReference("Users")
+        cusid.child(firebaseUser.uid)
+
+        userdatabase = FirebaseDatabase.getInstance().getReference("Users")
+        val userref = userdatabase.child(firebaseUser.uid)
+        userref.addValueEventListener(object:ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                val cusName = snapshot.child("name").getValue(String::class.java)
+                val cusNumber = snapshot.child("number").getValue(String::class.java)
+
+                submitButton.setOnClickListener {
+                    val title = titleEditText.selectedItem.toString()
+                    val name = cusName.toString()
+                    val number = cusNumber.toString()
+                    val description = descriptionEditText.text.toString().trim()
+                    val location = city
 
 
-            val firebaseUser = firebaseAuth.currentUser!!
 
-            val cusid = FirebaseDatabase.getInstance().getReference("Users")
-            cusid.child(firebaseUser.uid)
 
-            if (title == "Choose Value" || description.isBlank()) {
-                Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
+                    if (title == "Choose Value" || description.isBlank()) {
+                        Toast.makeText(this@MapsActivity, "Please fill out all fields", Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
 
-            if (description.isEmpty()) {
-                descriptionEditText.error = "Description is required"
-                return@setOnClickListener
-            }
+                    if (description.isEmpty()) {
+                        descriptionEditText.error = "Description is required"
+                        return@setOnClickListener
+                    }
 
-            val jobid = database.push().key!!
-            val user1 = Client(firebaseUser.uid,jobid,title,name,description,location,latitude,longitude,address,"pending")
+
+
+                    val jobid = database.push().key!!
+                    val user1 = Client(firebaseUser.uid,number,jobid,title,name,description,location,latitude,longitude,address,"pending")
 //            val newRef = database.child("jobs").push() // generate new unique key
-            database.child(jobid).setValue(user1) // add new item as child with unique key under "Users" parent node
+                    database.child(jobid).setValue(user1) // add new item as child with unique key under "Users" parent node
 
-            Toast.makeText(this, "Searching For Worker", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MapsActivity, "Searching For Worker", Toast.LENGTH_SHORT).show()
 
 //            Toast.makeText(this, "${city}, ${state}", Toast.LENGTH_SHORT).show()
-            dialog.dismiss()
+                    dialog.dismiss()
 //            Toast.makeText(this@CustomerHomeActivity, "Looking for agent", Toast.LENGTH_SHORT).show()
-        }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
+
+
+
 
         dialog.show()
         dialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -157,6 +181,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         dialog.window?.setGravity(Gravity.BOTTOM)
 
     }
+
 
 
     override fun onMapReady(googleMap: GoogleMap) {
