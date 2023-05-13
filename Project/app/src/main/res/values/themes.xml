@@ -13,4 +13,15 @@
         <item name="android:statusBarColor">@color/Light_blue</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <style name="roundImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="roundedShape">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

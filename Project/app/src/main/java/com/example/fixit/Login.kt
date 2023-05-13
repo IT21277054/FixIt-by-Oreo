@@ -18,6 +18,7 @@ class Login : AppCompatActivity() {
     private lateinit var binding:ActivityLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -100,7 +101,7 @@ class Login : AppCompatActivity() {
                             finish()
                         }
                         else if (userType == "Customer"){
-                            startActivity(Intent(this@Login,Customer::class.java))
+                            startActivity(Intent(this@Login,DashBoard::class.java))
                             finish()
                         }
                     }
